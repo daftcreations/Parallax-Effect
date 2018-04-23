@@ -1,0 +1,72 @@
+<html>
+    <head>
+       
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            background-image: url(BG.jpg);
+            background-size: 100% 100%;
+            background-attachment: fixed;
+        }    
+        .d1{
+            margin-top: 100px;
+            margin-left: 300px;
+        }
+        .d2{
+            margin-left: -150px;
+            margin-top: -700px;
+        }
+        .d3{
+            margin-top: -650px;
+        }
+        .d4{
+            margin-top: -1050px;
+        }
+        .d5{
+            margin-top: -600px;
+            margin-left: 100px;
+        }
+        .d6{
+            margin-top: 250px;
+            margin-left: 950px;
+        }
+    </style>
+    </head>
+    <body>
+        
+        <div class="rellax d1">
+              <img src="2.png" width="70%"/>
+        </div>
+        
+        <div class="rellax d2" data-rellax-speed="6">
+              <img src="1.png" width="100%"/>
+        </div>
+        
+        <div class="rellax d3" data-rellax-speed="8">
+              <img src="3.png" width="100%"/>
+        </div>
+        
+        <div class="rellax d4" data-rellax-speed="2">
+              <img src="4.png" width="90%"/>
+        </div>
+        
+        <div class="rellax d5" data-rellax-speed="1">
+              <img src="MSG.png" width="50%"/>
+        </div>
+        
+         <div class="rellax d6" data-rellax-speed="4">
+              <img src="DAFT%20LOGO.png" width="100%"/>
+        </div>
+        <script type="text/javascript" src="rellax.js"></script>
+        <script>
+            var rellax = new Rellax('.rellax', {
+            // center: true
+            callback: function(position) {
+                // callback every position change
+                console.log(position);
+            }
+          });
+        </script>
+    </body>
+</html>
